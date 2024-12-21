@@ -1,0 +1,55 @@
+/* px */
+#px-example {
+  font-size: 16px;
+}
+
+.parent {
+  font-size: 30px;
+}
+/* em */
+#em-parent {
+  font-size: 30px;
+}
+
+#em-child {
+  font-size: 1.5em;
+}
+
+/* rem */
+#rem-parent {
+  font-size: 30px;
+}
+
+#rem-child {
+  font-size: 1.5rem;
+}
+
+/* % */
+#percentage-parent {
+  font-size: 30px;
+}
+#percentage-child {
+  font-size: 120%;
+}
+
+#root-percentage-child {
+  font-size: 120%;
+}
+
+/* vw */
+#view-width {
+  width: 100vw;
+  background-color: aliceblue;
+}
+
+/* vh */
+#view-height {
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+/* dvh */
+#dynamic-view-height {
+  height: 100dvh;
+  background-color: aliceblue;
+}

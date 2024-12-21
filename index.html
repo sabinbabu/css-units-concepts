@@ -6,5 +6,145 @@
     <link rel="stylesheet" href="./style.css" />
     <title>CSS Units</title>
   </head>
-  <body></body>
+  <body>
+    <h1>CSS Units</h1>
+    <p id="heading-para">
+      Many CSS properties like <b>width, margin, padding</b>, and
+      <b>font-size</b> take a length, and CSS has many different ways to express
+      length.CSS units can be of two types: absolute and relative. <br /><b
+        >Absolute units</b
+      >
+      are normally considered of same size and are not relative to anything.
+      <code> cm, mm, in, px</code> are some of commonly used absolute units.<br />
+      <b>Relative units</b> on the other hand, are dependent on something else,
+      generally, size of the element or parent element, they change to change
+      their size based on other factor. <code>em, vh, vw, rem</code> are some
+      commonly used relative units . Some of commonly used css units are:
+    </p>
+    <main>
+      <section class="px">
+        <h2>1. px</h2>
+        <h3>Definition</h3>
+        <p>
+          Pixels or simply <b>px</b> are one of the most common length units in
+          CSS. In CSS, 1 pixel is formally defined as 1/96 of an inch.
+        </p>
+        <h3>Examples</h3>
+        <p id="px-example">
+          This example uses 16px of font size. This is the default font-size for
+          most of the browsers
+        </p>
+      </section>
+      <section class="em">
+        <h2>2. em</h2>
+        <h3>Definition</h3>
+        <p>
+          The CSS em unit gets its name from a typographical unit. In
+          typography, the term em was originally a reference to the width of the
+          capital M in the typeface and size being used. When used with the
+          font-size property, em inherits the font-size from its parent element.
+        </p>
+        <h3>Examples</h3>
+        <p id="em-parent">I am parent with 30px of font-size</p>
+        <div class="parent">
+          <p id="em-child">
+            I am using font size of 1.5em. My font-size will depend on my parent
+            and I am 1.5 times the size of my parent.
+          </p>
+        </div>
+      </section>
+      <section class="rem">
+        <h2>3. rem</h2>
+        <h3>Definition</h3>
+        <p>
+          This is simply known as root em. This relative unit is not affected by
+          the size or setting of a parent element, and is instead based on the
+          root of the document. For websites, the root of the document is the
+          html element. In most browsers, the default font size is 16, so the
+          font-size of html elements is 16px. But if a user changes their
+          browser's default font size, then the font-size of p will scale up or
+          down accordingly.
+        </p>
+        <h3>Examples</h3>
+        <div class="parent">
+          <p id="rem-parent">I am parent with 30px of font-size</p>
+          <p id="rem-child">
+            I am using font size of 1.5rem. My font-size will depend on the size
+            of root element and not my parent and I am 1.5 times the size of
+            root element.
+          </p>
+        </div>
+      </section>
+      <section class="percentage">
+        <h2>4. percentage (%)</h2>
+        <h3>Definition</h3>
+        <p>
+          Percentages, are relative to the parent's size. For example, if you
+          set an element's font-size as a percentage, it will be a percentage of
+          the font-size of the element's parent.
+        </p>
+        <h3>Examples</h3>
+        <p id="percentage-parent">I am parent with 30px of font-size</p>
+        <div class="parent">
+          <p id="percentage-child">
+            I am using font size of 120%. My font-size will depend on the size
+            of my parent.
+          </p>
+        </div>
+        <p id="root-percentage-child">
+          I am also using font size of 120%. But, my font-size will depend on
+          the size of root element.
+        </p>
+      </section>
+      <section class="vw">
+        <h2>4. vw</h2>
+        <h3>Definition</h3>
+        <p>
+          <b>vw</b>, also commonly known as view width, is relative to viewport
+          width. 1vw is 1% of the width of the viewport.
+        </p>
+        <h3>Examples</h3>
+        <div id="view-width">
+          I am using 100vw. I will take up the full width available. So if you
+          resize your browser to 690 pixels wide, then I will take up all 690
+          pixels in width.
+        </div>
+      </section>
+      <section class="vh">
+        <h2>vh</h2>
+        <h3>Definition</h3>
+        <p>
+          <b>vh</b>, also commonly known as view height, is relative to viewport
+          height. 1vh is 1% of the height of the viewport.
+        </p>
+        <h3>Examples</h3>
+        <div id="view-height">
+          I am using 100vh. I will take up the 100% of height available. So if
+          the browser window is 900 pixels high, my height will be 900 pixels.
+        </div>
+      </section>
+      <section class="dvh">
+        <h2>dvh</h2>
+        <h3>Definition</h3>
+        <p>
+          They were introduced, when mobile browsers started changing viewport
+          height as user scrolls down or up to see more content. The
+          traditional, vh , were not behaving correctly when view height was
+          changing. The <b>dynamic view port height (dvh)</b>, are defined with
+          respect to any viewport size, that are dynamically expanded or
+          retracted. <br />
+          Let's say you have a phone that has 100px of screen space. When you
+          load up a page, the browser UI takes up 15px which leaves 85px left
+          for your website's content. However, browser, when you scroll down the
+          browser UI only takes up 10px, which leaves your website content with
+          90px.
+        </p>
+        <h3>Examples</h3>
+        <div id="dynamic-view-height">
+          I am using 100vh. I will take up exactly 100% of height available on
+          any screen. See me on mobile device to feel difference
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
