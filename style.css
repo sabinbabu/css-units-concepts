@@ -1,6 +1,33 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  padding: 1rem;
+  word-spacing: 7px;
+  line-height: 3rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2,
+h3,
+p {
+  padding: 1rem 0;
+}
+
+.example {
+  background-color: tomato;
+  padding: 1rem;
+  color: white;
+}
 /* px */
 #px-example {
   font-size: 16px;
+  background-color: aliceblue;
 }
 
 .parent {
@@ -9,31 +36,38 @@
 /* em */
 #em-parent {
   font-size: 30px;
+  background-color: burlywood;
 }
 
 #em-child {
   font-size: 1.5em;
+  background-color: aliceblue;
 }
 
 /* rem */
 #rem-parent {
   font-size: 30px;
+  background-color: burlywood;
 }
 
 #rem-child {
   font-size: 1.5rem;
+  background-color: aliceblue;
 }
 
 /* % */
 #percentage-parent {
   font-size: 30px;
+  background-color: burlywood;
 }
 #percentage-child {
   font-size: 120%;
+  background-color: aliceblue;
 }
 
 #root-percentage-child {
   font-size: 120%;
+  background-color: chocolate;
 }
 
 /* vw */

@@ -30,10 +30,10 @@
           Pixels or simply <b>px</b> are one of the most common length units in
           CSS. In CSS, 1 pixel is formally defined as 1/96 of an inch.
         </p>
-        <p>
+        <p class="example">
           <code>.paragraph{<br />font-size : 16px <br />}</code>
         </p>
-        <h3>Examples</h3>
+        <h3>Example</h3>
         <p id="px-example">
           This example uses 16px of font size. This is the default font-size for
           most of the browsers
@@ -49,11 +49,11 @@
           capital M in the typeface and size being used. When used with the
           font-size property, em inherits the font-size from its parent element.
         </p>
-        <p>
+        <p class="example">
           <code>.paragraph{<br />font-size : 1.5em <br />}</code>
         </p>
 
-        <h3>Examples</h3>
+        <h3>Example</h3>
         <p id="em-parent">I am parent with 30px of font-size</p>
         <div class="parent">
           <p id="em-child">
@@ -75,11 +75,11 @@
           browser's default font size, then the font-size of p will scale up or
           down accordingly.
         </p>
-        <p>
+        <p class="example">
           <code>.paragraph{<br />font-size : 1.5rem <br />}</code>
         </p>
 
-        <h3>Examples</h3>
+        <h3>Example</h3>
         <div class="parent">
           <p id="rem-parent">I am parent with 30px of font-size</p>
           <p id="rem-child">
@@ -98,11 +98,11 @@
           set an element's font-size as a percentage, it will be a percentage of
           the font-size of the element's parent.
         </p>
-        <p>
+        <p class="example">
           <code>.paragraph{<br />font-size : 120% <br />}</code>
         </p>
 
-        <h3>Examples</h3>
+        <h3>Example</h3>
         <p id="percentage-parent">I am parent with 30px of font-size</p>
         <div class="parent">
           <p id="percentage-child">
@@ -123,17 +123,18 @@
           <b>vw</b>, also commonly known as view width, is relative to viewport
           width. 1vw is 1% of the width of the viewport.
         </p>
-        <p>
+        <p class="example">
           <code>.container{<br />height : 100vw <br />}</code>
         </p>
 
-        <h3>Examples</h3>
+        <h3>Example</h3>
         <div id="view-width">
           I am using 100vw. I will take up the full width available. So if you
           resize your browser to 690 pixels wide, then I will take up all 690
           pixels in width.
         </div>
       </section>
+      <!-- vh -->
       <section class="vh">
         <h2>5. vh</h2>
         <h3>Definition</h3>
@@ -141,16 +142,17 @@
           <b>vh</b>, also commonly known as view height, is relative to viewport
           height. 1vh is 1% of the height of the viewport.
         </p>
-        <p>
+        <p class="example">
           <code>.container{<br />height : 100vh <br />}</code>
         </p>
-        <h3>Examples</h3>
+        <h3>Example</h3>
 
         <div id="view-height">
           I am using 100vh. I will take up the 100% of height available. So if
           the browser window is 900 pixels high, my height will be 900 pixels.
         </div>
       </section>
+      <!-- dvh -->
       <section class="dvh">
         <h2>6. dvh</h2>
         <h3>Definition</h3>
@@ -167,10 +169,10 @@
           browser UI only takes up 10px, which leaves your website content with
           90px.
         </p>
-        <p>
+        <p class="example">
           <code>.container{<br />height : 100dvh <br />}</code>
         </p>
-        <h3>Examples</h3>
+        <h3>Example</h3>
         <div id="dynamic-view-height">
           I am using 100vh. I will take up exactly 100% of height available on
           any screen. See me on mobile device to feel difference
