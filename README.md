@@ -1,1 +1,1 @@
-# This webpage discuss about different types of CSS Units with example
+# This webpage discusses about different types of CSS Units with example
